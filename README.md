@@ -1,5 +1,14 @@
 # shadowrock配置文件
 
+
+小火箭的module相当于是对当前配置文件的一个重写，其本质也是  conf配置文件：
+    1. module的优先级高于当前的conf配置文件
+    2. module的先后顺序就是优先级
+    3. 可以开启多个module，但是只能选择一个conf配置文件
+    4. module不是conf配置文件的一部分
+
+
+
 这是一个关于ios shadowrocket app的配置文件，主要目的是飞流+去广告。有两种手段：
 
 - 使用rule-set：在请求ad广告的url的时候，其dns请求返回NXDOMAIN、或者服务器拒接访问
